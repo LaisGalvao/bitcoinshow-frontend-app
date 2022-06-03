@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import axios from './services/axios'
 Vue.config.productionTip = false
+
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+Vue.use(FontAwesomeIcon);
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,17 +1,21 @@
 <template>
   <div class="hello">
-    {{ msg }}
+    <h1><i class="fa-solid fa-coin"></i>
+    {{ msg }}</h1>
   </div>
 </template>
 
 <script>
+import axios from '../services/axios'
 export default {
   name: 'HelloWorld',
   data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  }, mounted() {
+    console.log(axios);
+  },
 }
 </script>
 
