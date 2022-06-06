@@ -25,9 +25,9 @@ import GlobeIconVue from './components/icons/GlobeIcon.vue';
 @import '@/assets/base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+ /*  padding: 2rem; */
 
   font-weight: normal;
 }
@@ -59,7 +59,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 nav a.router-link-exact-active {
@@ -87,19 +87,17 @@ nav a:first-of-type {
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    display: flex;
   }
 
   header {
     width: 100%;
     display: block;
     place-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     height: max-content;
-    padding-right: calc(var(--section-gap) / 2);
+   /*  padding-right: calc(var(--section-gap) / 2); */
   }
 
   header .wrapper {
@@ -117,8 +115,8 @@ nav a:first-of-type {
     margin-left: -1rem;
     font-size: 1rem;
 
-    padding: 1rem 0;
-    margin-top: 1rem;
+  /*   padding: 1rem 0;
+    margin-top: 1rem; */
   }
 }
 </style>
