@@ -13,7 +13,6 @@ import GlobeIconVue from './components/icons/GlobeIcon.vue';
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -26,7 +25,7 @@ import GlobeIconVue from './components/icons/GlobeIcon.vue';
 
 #app {
   max-width: 100%;
-  margin: 0 auto;
+/*   margin: 0 auto; */
  /*  padding: 2rem; */
 
   font-weight: normal;
@@ -91,18 +90,23 @@ nav a:first-of-type {
   }
 
   header {
-    width: 100%;
-    display: block;
+   width: 100%;
+    display: flex;
     place-items: center;
     position: fixed;
+    justify-content: center;
+    flex-direction: column;
     top: 0;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
+    margin: auto;
    /*  padding-right: calc(var(--section-gap) / 2); */
   }
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
+    place-items: center;
     flex-wrap: wrap;
   }
 

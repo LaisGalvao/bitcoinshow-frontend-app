@@ -1,9 +1,13 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import InputDate from '@/components/InputDate.vue'
+import CardComponent from '../components/CardComponent.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="container mx-auto px-4 flex items-center content-center justify-center gap-8">
+    <InputDate />
+    <CardComponent />
   </main>
 </template>
+<style>
+</style>
