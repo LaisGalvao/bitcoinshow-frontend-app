@@ -2,6 +2,14 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
 import GlobeIconVue from './components/icons/GlobeIcon.vue';
+/* import api from './services'
+
+const coin  = 'bitcoin'
+ function getfromapi (){
+   api.get(`/coins/${coin}`).then(response => console.log(response.data.description.en))
+ } 
+getfromapi()
+ */
 </script>
 
 <template>
