@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
 import GlobeIconVue from './components/icons/GlobeIcon.vue';
 /* import api from './services'
 
@@ -14,12 +13,9 @@ getfromapi()
 
 <template>
   <header>
-    <GlobeIconVue />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
+        <GlobeIconVue />
         <RouterLink to="/">Home</RouterLink>
       </nav>
     </div>
@@ -31,17 +27,10 @@ getfromapi()
 <style>
 @import '@/assets/base.css';
 
-#app {
-  max-width: 100%;
-/*   margin: 0 auto; */
- /*  padding: 2rem; */
-
-  font-weight: normal;
-}
 
 header {
+  width: 100%;
   line-height: 1.5;
-  max-height: 100vh;
 }
 
 .logo {
@@ -77,8 +66,9 @@ nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
-  display: inline-block;
+nav a svg{
+  margin: auto;
+  display: block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
@@ -91,16 +81,13 @@ nav a:first-of-type {
   body {
     display: flex;
     place-items: center;
-  }
-
-  #app {
     display: flex;
+    justify-content: center
   }
 
   header {
-   width: 100%;
+    width: 100%;
     display: flex;
-    place-items: center;
     position: fixed;
     justify-content: center;
     flex-direction: column;
@@ -109,11 +96,12 @@ nav a:first-of-type {
     height: -moz-max-content;
     height: max-content;
     margin: auto;
-   /*  padding-right: calc(var(--section-gap) / 2); */
+    /*  padding-right: calc(var(--section-gap) / 2); */
   }
 
   header .wrapper {
     display: flex;
+    align-items: center;
     place-items: center;
     flex-wrap: wrap;
   }
@@ -127,7 +115,7 @@ nav a:first-of-type {
     margin-left: -1rem;
     font-size: 1rem;
 
-  /*   padding: 1rem 0;
+    /*   padding: 1rem 0;
     margin-top: 1rem; */
   }
 }

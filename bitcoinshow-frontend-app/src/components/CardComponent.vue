@@ -1,6 +1,6 @@
 <template>
-    <div class="py-6">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <div class="w-full mt-5 inline-block">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-zinc-800">
             <img class="w-full" :src="coinImgSrc" :alt="coinImgAlt">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">{{ coinName }}</div>
